@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "e0a51986-c94c-4f12-bc7a-831da8cf876f",
+		"name": "Swagger user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17359265"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 333,\r\n  \"username\": \"buka\",\r\n  \"firstName\": \"mimi\",\r\n  \"lastName\": \"mami\",\r\n  \"email\": \"mimi@mama.com\",\r\n  \"password\": \"4567\",\r\n  \"phone\": \"89146462354\",\r\n  \"userStatus\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get information user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/polina",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"polina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create array list users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 222,\r\n    \"username\": \"polina\",\r\n    \"firstName\": \"lolo\",\r\n    \"lastName\": \"kaka\",\r\n    \"email\": \"polina@kiki.com\",\r\n    \"password\": \"12\",\r\n    \"phone\": \"123456789\",\r\n    \"userStatus\": 3\r\n  },\r\n  {\r\n    \"id\": 333,\r\n    \"username\": \"papa\",\r\n    \"firstName\": \"oleg\",\r\n    \"lastName\": \"dodo\",\r\n    \"email\": \"dodo@koko.com\",\r\n    \"password\": \"56\",\r\n    \"phone\": \"987654321\",\r\n    \"userStatus\": 4\r\n  },\r\n  {\r\n    \"id\": 444,\r\n    \"username\": \"mami\",\r\n    \"firstName\": \"lena\",\r\n    \"lastName\": \"miki\",\r\n    \"email\": \"miki@mami.com\",\r\n    \"password\": \"44\",\r\n    \"phone\": \"12345654367\",\r\n    \"userStatus\": 8\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithArray",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"id\": 666,\r\n    \"username\": \"papanka\",\r\n    \"firstName\": \"lego\",\r\n    \"lastName\": \"dodo\",\r\n    \"email\": \"dodo@koko.com\",\r\n    \"password\": \"56\",\r\n    \"phone\": \"987654321\",\r\n    \"userStatus\": 4\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/buka",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"buka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/papanka",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"papanka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/login?username=polina&password=12",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "polina"
+						},
+						{
+							"key": "password",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/logout",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
