@@ -1,0 +1,6 @@
+Системные требования:
+ОС: Windows 10, 11 (64-bit)
+Процессор: Intel Core i7-7700K / AMD Ryzen 5 1600X
+Оперативная память: 16 GB ОЗУ
+Видеокарта: 8 GB VRAM, AMD RX 6700 XT or NVIDIA GeForce RTX 2070
+DirectX: версии 12
