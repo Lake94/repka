@@ -1,6 +1,3 @@
-<<<<<<< HEAD
 vvv111
 
-=======
-vvv444
->>>>>>> e36eb8cad8cdd28b28c6227b3acc1d1ab0d2b2cc
+
